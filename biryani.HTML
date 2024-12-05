@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>THE BIRYANI KITCHEN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href=https://fonts.gstatic.com/s/amaticsc/v26/TUZyzwprpvBS1izr_vOEBOSfQZQ.woff2 family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.freshtohome.com/blog/wp-content/uploads/2024/08/Biryani.jpeg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-grey yellow w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-white-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">THE<br>BIRYANI KITCHEN</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>THE<br>BIRYANI KITCHEN</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-yellow">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-padding-64 w3-purple w3-black w3-xlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Veg Biryani</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Non-veg Biryani</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Starter</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Palak Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹269</span></h1>
+      <p class="w3-text-grey">Spinach,basmati rice,spices</p>
+      <hr>
+   
+      <h1><b>Mushroom Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹299</span></h1>
+      <p class="w3-text-grey">Mushrooms,basmati rice,spices</p>
+      <hr>
+      
+      <h1><b>Gobhi Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹279</span></h1>
+      <p class="w3-text-grey">Cauliflower,basmati rice,spices</p>
+      <hr>
+
+      <h1><b>Corn Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹249</span></h1>
+      <p class="w3-text-grey">Corn,basmati rice,spices</p>
+      <hr>
+
+      <h1><b>Vegetable Biryani</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹229</span></h1>
+      <p class="w3-text-grey">Vegetables,basmati rice,spices</p>
+      <hr>
+
+      <h1><b>Saffron Biryani</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹349</span></h1>
+      <p class="w3-text-grey">Saffron-infused rice,vegetables,spices</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Hydrabadi Chicken Dum Biryani</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹349</span></h1>
+      <p class="w3-text-grey">basmati rice,chicken,blend of spices</p>
+      <hr>
+   
+      <h1><b>Mutton Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹450</span></h1>
+      <p class="w3-text-grey">mutton,basmati rice,blend of spices</p>
+      <hr>
+      
+      <h1><b>Shrimp Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹350</span></h1>
+      <p class="w3-text-grey">Shrimp,basmati rice,blend of spices</p>
+      <hr>
+
+      <h1><b>Chicken Tikka Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹419</span></h1>
+      <p class="w3-text-grey">marinated chicken,basmati rice,blend of spices</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken Tikka</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹249</span></h1>
+      <p class="w3-text-grey">marinated tandoor chicken served with mint chutney</p>
+      <hr>
+   
+      <h1><b>Chicken Lollipop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹249</span></h1>
+      <p class="w3-text-grey">fried chicken drumsticks tossed in a sweet or sour sauce</p>
+      <hr>
+      
+      <h1><b>Fish Fingers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹250</span></h1>
+      <p class="w3-text-grey">fried fish strips served with a tartar sauce</p>
+      <hr>
+      
+      <h1><b>Prawn Cocktail </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹799</span></h1>
+      <p class="w3-text-grey">chilled prawns served with a cocktail sauce</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-grey w3-beige w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Biryani Kitchen Restaurant was founded in visakhapatnam by SaiDeepika.Get ready to indulge in the aromatic flavours of biryani! Our website is dedicted to all things biryani,from traditional recipies to modern twists.</p>
+    <p><strong>The Chef?</strong> Mr. Sanjeev Kapoor<img src="chef2.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"/></p>
+    <p>We are proud of our interiors.</p>
+    <img src="https://www.posist.com/restaurant-times/wp-content/uploads/2017/09/Restaurant-Interior-Design-Tips-To-Attract-Customers-And-Improve-The-Guest-Experience-In-2021.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Thur 10.00 - 24.00</p>
+        <p>Fri & Sat Closed</p>
+        <p>Sunday ->24/7</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="resto.jpg" class="w3-image w3-white" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-yellow w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 91609 93837</p>
+    <p><span class="w3-tag">FYI!</span> The biryani kitchen is an online platform that brings together biryani lovers and vendors.Our mission is to provide a convenient and delicious biryani and starters experience for individuals,parties and corporate events.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="13:12 04-12-2024"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
